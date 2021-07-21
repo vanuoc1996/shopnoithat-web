@@ -1,0 +1,24 @@
+.submenu-a a{
+  color:#25396f;
+  display:block;
+  font-size:.9rem;
+  font-weight:600;
+  letter-spacing:.5px;
+  padding:.7rem 2rem;
+  transition:all .3s
+}
+.submenu-a.active{
+  position:relative
+}
+
+.submenu-a.active>a{
+  color:#435ebe;
+  font-weight:700
+}
+.submenu-a a:hover{
+  margin-left:.3rem;
+  text-decoration: none;
+}
+.submenu-a{
+
+}

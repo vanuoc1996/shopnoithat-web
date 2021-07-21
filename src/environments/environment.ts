@@ -3,8 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: {
+    // baseEndpoint: 'https://voffice.viettelgroup.dev/api'
+    baseEndpoint: 'http://localhost:8080/api/v1'
+    // baseEndpoint: 'http://192.168.88.210:8080/api'
+  }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

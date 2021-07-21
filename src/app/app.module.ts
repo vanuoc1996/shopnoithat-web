@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 
-import { TableComponent } from './modeles/table/table.component';
-import { ChairComponent } from './modeles/chair/chair.component';
+import { TableComponent } from './modeles/admin/table/table.component';
+import { ChairComponent } from './modeles/admin/chair/chair.component';
+import { Page404Component } from './extrapages/page404/page404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
-    ChairComponent
+    ChairComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
