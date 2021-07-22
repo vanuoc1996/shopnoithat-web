@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-page',
-  templateUrl: './page.component.html',
-  styleUrls: ['./page.component.css']
+  templateUrl: './page-admin.component.html',
+  styleUrls: ['./page-admin.component.css']
 })
-export class PageComponent implements OnInit {
+export class PageAdminComponent implements OnInit {
 
   constructor() { }
 

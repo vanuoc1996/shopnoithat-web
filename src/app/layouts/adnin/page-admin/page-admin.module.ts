@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {PageRoutingModule} from "./page-routing.module";
-import {PageComponent} from "./page.component";
+import {PageAdminRoutingModule} from "./page-admin-routing.module";
+import {PageAdminComponent} from "./page-admin.component";
 import {FooterComponent} from "../footer/footer.component";
 import {SidebarComponent} from "../sidebar/sidebar.component";
 
@@ -9,16 +9,16 @@ import {SidebarComponent} from "../sidebar/sidebar.component";
 
 @NgModule({
   declarations: [
-    PageComponent,
+    PageAdminComponent,
     FooterComponent,
     SidebarComponent
   ],
   imports: [
     CommonModule,
-    PageRoutingModule
+    PageAdminRoutingModule
   ],
   exports : [
   ],
   providers: []
 })
-export class PageModule { }
+export class PageAdminModule { }

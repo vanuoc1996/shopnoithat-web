@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
-import {TableComponent} from "../../modeles/admin/table/table.component";
-import {ChairComponent} from "../../modeles/admin/chair/chair.component";
-import {CalendarComponent} from "../../modeles/admin/calendar/calendar.component";
+import {TableComponent} from "../../../modeles/admin/table/table.component";
+import {ChairComponent} from "../../../modeles/admin/chair/chair.component";
+import {CalendarComponent} from "../../../modeles/admin/calendar/calendar.component";
 import {SettingComponent} from "../setting/setting.component";
+import {MainComponent} from "../main/main.component";
 
 const routes: Routes = [{
   path: '',
-  redirectTo: 'table'
+  component: MainComponent
 }, {
   path: 'table',
   component: TableComponent
@@ -31,4 +32,4 @@ const routes: Routes = [{
   ],
     exports: [RouterModule, SettingComponent]
 })
-export class PageRoutingModule { }
+export class PageAdminRoutingModule { }
