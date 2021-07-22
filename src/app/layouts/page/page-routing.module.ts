@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {TableComponent} from "../../modeles/admin/table/table.component";
 import {ChairComponent} from "../../modeles/admin/chair/chair.component";
+import {CalendarComponent} from "../../modeles/admin/calendar/calendar.component";
 
 const routes: Routes = [{
   path: '',
@@ -13,6 +14,9 @@ const routes: Routes = [{
 }, {
   path: 'chair',
   component: ChairComponent
+}, {
+  path: 'calendar',
+  component: CalendarComponent
 }
 ];
 

@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { TableComponent } from './modeles/admin/table/table.component';
 import { ChairComponent } from './modeles/admin/chair/chair.component';
 import { Page404Component } from './extrapages/page404/page404.component';
+import { CalendarComponent } from './modeles/admin/calendar/calendar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
     ChairComponent,
-    Page404Component
+    Page404Component,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
