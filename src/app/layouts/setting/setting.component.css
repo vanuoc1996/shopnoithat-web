@@ -1,0 +1,11 @@
+.setting{
+  left: 94vw;
+  top: 28vh;
+  /*padding: 10px;*/
+  background-color:rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+.fixed-plugin{
+  position: fixed;
+  text-align: center;
+}

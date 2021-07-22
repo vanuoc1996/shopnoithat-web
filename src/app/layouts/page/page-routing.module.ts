@@ -4,6 +4,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {TableComponent} from "../../modeles/admin/table/table.component";
 import {ChairComponent} from "../../modeles/admin/chair/chair.component";
 import {CalendarComponent} from "../../modeles/admin/calendar/calendar.component";
+import {SettingComponent} from "../setting/setting.component";
 
 const routes: Routes = [{
   path: '',
@@ -21,11 +22,13 @@ const routes: Routes = [{
 ];
 
 @NgModule({
-  declarations: [],
+    declarations: [
+        SettingComponent
+    ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  exports: [RouterModule]
+    exports: [RouterModule, SettingComponent]
 })
 export class PageRoutingModule { }
