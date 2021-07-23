@@ -1,4 +1,3 @@
-import {createSelector, createFeatureSelector} from '@ngrx/store';
 import * as userLogins from '../_actions/userActions';
 import {User} from "../_models";
 

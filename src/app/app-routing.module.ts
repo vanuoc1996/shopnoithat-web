@@ -4,7 +4,7 @@ import {PageAdminComponent} from "./layouts/adnin/page-admin/page-admin.componen
 import {Page404Component} from "./extrapages/page404/page404.component";
 // import {LoginComponent} from "./extrapages/login/login.component";
 import {PageWebComponent} from "./layouts/wepsite/page-web/page-web.component";
-import {LoginComponent} from "./store/login/login.component";
+import {LoginComponent} from "./extrapages/login/login.component";
 import {DetailComponent} from "./store/detail/detail.component";
 
 const routes: Routes = [

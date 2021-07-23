@@ -1,0 +1,28 @@
+.footer-top{
+  width: 100vw;
+}
+.backstretch{
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  height: 420px;
+  width: 100vw;
+  z-index: -999998;
+  position: absolute;
+}
+
+.image-footer{
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  width: 99vw;
+  height: 1054.67px;
+  max-height: none;
+  max-width: none;
+  z-index: -999999;
+  left: 0px;
+  top: -291.622px;
+}

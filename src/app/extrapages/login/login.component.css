@@ -1,5 +1,6 @@
 .bg{
   /* Full height */
+  padding-top: 15vh;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;

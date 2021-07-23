@@ -1,0 +1,14 @@
+.nav-config{
+  /*background-color:rgba(0,0,0,0.4);*/
+  background-color:#0c4128;
+  font-family: Georgia;
+  font-size: 20px;
+}
+.logo-setting{
+  position: initial;
+  height: 70px;
+}
+.logo-setting:active{
+  position: initial;
+  height: 60px;
+}

@@ -13,7 +13,7 @@ import {HomeWebComponent} from "./layouts/wepsite/home-web/home-web.component";
 import {StoreModule} from "@ngrx/store";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {LoginComponent} from "./store/login/login.component";
+import {LoginComponent} from "./extrapages/login/login.component";
 import {DetailComponent} from "./store/detail/detail.component";
 
 

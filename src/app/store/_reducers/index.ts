@@ -4,7 +4,7 @@ import * as User from '../_models';
 import { StoreModule} from '@ngrx/store';
 import { from } from 'rxjs';
 
-export interface UserState{
+export interface  UserState{
     entitie:fromUser.UserState;
 }
 export const reducers = {

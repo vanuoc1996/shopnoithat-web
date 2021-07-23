@@ -1,0 +1,40 @@
+.giuseart-mobile-contact-bar{
+  display:none
+}
+.giuseart-pc-contact-bar{
+  right: 5vh;
+  bottom: 30vh;
+  position: fixed;
+  z-index: 998;
+  margin-bottom:0
+}
+.giuseart-pc-contact-bar li{
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  margin-bottom: 0;
+  list-style: none;
+}
+.giuseart-pc-contact-bar li.facebook{
+  margin-bottom: 8px;
+  background: url(https://giuseart.com/wp-content/uploads/2020/03/fb.png);
+  background-repeat: no-repeat;
+  background-size: 56px;
+}
+.giuseart-pc-contact-bar li.zalo{
+  background: url(https://giuseart.com/wp-content/uploads/2020/03/zl.png);
+  background-repeat: no-repeat;
+  background-size: 56px;
+  margin-bottom: 8px;
+}
+
+.giuseart-pc-contact-bar li.hotline {
+  background: url(https://giuseart.com/wp-content/uploads/2020/03/p2.gif);
+  background-repeat: no-repeat;
+  background-size: 56px;
+}
+.giuseart-pc-contact-bar li a{
+  display: block;
+  width: 46px;
+  height: 46px;
+}
