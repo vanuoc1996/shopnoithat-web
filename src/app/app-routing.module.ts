@@ -6,6 +6,7 @@ import {Page404Component} from "./extrapages/page404/page404.component";
 import {PageWebComponent} from "./layouts/wepsite/page-web/page-web.component";
 import {LoginComponent} from "./extrapages/login/login.component";
 import {DetailComponent} from "./store/detail/detail.component";
+import {AuthGuard} from "./core/guard/auth.guard";
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
   {
     path: 'admin',
     component: PageAdminComponent,
-    loadChildren: () => import('./layouts/adnin/page-admin/page-admin.module').then(m => m.PageAdminModule)
+    loadChildren: () => import('./layouts/adnin/page-admin/page-admin.module').then(m => m.PageAdminModule),
+    // canActivate: [AuthGuard]
   },
   {
     path: 'login',
@@ -26,16 +28,16 @@ const routes: Routes = [
     path: 'detail',
     component: DetailComponent
   },
-  // {
-  //   path: '',
-  //   component: PageWebComponent,
-  //   loadChildren: () => import('./layouts/wepsite/page-web/page-web.module').then(m => m.PageWebModule)
-  // },
   {
     path: '',
-    component: PageAdminComponent,
-    loadChildren: () => import('./layouts/adnin/page-admin/page-admin.module').then(m => m.PageAdminModule)
+    component: PageWebComponent,
+    loadChildren: () => import('./layouts/wepsite/page-web/page-web.module').then(m => m.PageWebModule)
   },
+  // {
+  //   path: '',
+  //   component: PageAdminComponent,
+  //   loadChildren: () => import('./layouts/adnin/page-admin/page-admin.module').then(m => m.PageAdminModule)
+  // },
   {
     path: '**',
     component: Page404Component

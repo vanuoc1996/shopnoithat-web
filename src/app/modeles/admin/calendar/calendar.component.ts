@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CalendarOptions} from "@fullcalendar/angular";
 
 @Component({
   selector: 'app-calendar',
@@ -7,45 +8,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalendarComponent implements OnInit {
 
-  constructor() { }
+  calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth',
+    dateClick: this.handleDateClick.bind(this), // bind is important!
+    events: [
+      {
+        "title": "All Day Event",
+        "start": "2021-09-24"
+      },
+      {
+        "title": "Long Event",
+        "start": "2021-09-25",
+        "end": "2021-09-27"
+      },
+      {
+        "title": "Repeating Event",
+        "start": "2021-09-22T16:00:00"
+      },
+      {
+        "title": "Repeating Event",
+        "start": "2021-09-14T16:00:00"
+      },
+      {
+        "title": "Conference",
+        "start": "2021-09-29",
+        "end": "2021-09-30"
+      }
+    ]
+  };
 
-  // @ts-ignore
-  date14: Date;
-
-
-  es: any;
-
-  // @ts-ignore
-  invalidDates: Array<Date>
+  constructor() {
+  }
 
   ngOnInit() {
-    this.es = {
-      firstDayOfWeek: 1,
-      dayNames: [ "domingo","lunes","martes","miércoles","jueves","viernes","sábado" ],
-      dayNamesShort: [ "dom","lun","mar","mié","jue","vie","sáb" ],
-      dayNamesMin: [ "D","L","M","X","J","V","S" ],
-      monthNames: [ "enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre" ],
-      monthNamesShort: [ "ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic" ],
-      today: 'Hoy',
-      clear: 'Borrar'
-    }
 
-    let today = new Date();
-    let month = today.getMonth();
-    let year = today.getFullYear();
-    let prevMonth = (month === 0) ? 11 : month -1;
-    let prevYear = (prevMonth === 11) ? year - 1 : year;
-    let nextMonth = (month === 11) ? 0 : month + 1;
-    let nextYear = (nextMonth === 0) ? year + 1 : year;
-    // this.minDate = new Date();
-    // this.minDate.setMonth(prevMonth);
-    // this.minDate.setFullYear(prevYear);
-    // this.maxDate = new Date();
-    // this.maxDate.setMonth(nextMonth);
-    // this.maxDate.setFullYear(nextYear);
+  }
 
-    let invalidDate = new Date();
-    invalidDate.setDate(today.getDate() - 1);
-    this.invalidDates = [today,invalidDate];
+
+  handleDateClick(arg: any) {
+    alert('date click! ' + arg.dateStr)
   }
 }

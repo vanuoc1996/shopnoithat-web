@@ -19,8 +19,11 @@ export class LoginComponent {
     password: new FormControl(''),
   });
   // @ts-ignore
+  loginForm: FormGroup;
+  // @ts-ignore
   isCheckLogin: boolean;
   isSubmit: boolean = false;
+
   dataLogin = [
     {
       "id": 1,
@@ -37,8 +40,10 @@ export class LoginComponent {
       "remember_token": 'TYDAKSDJASLKDJASLKDJASDASD'
     }
   ]
-
-  constructor(private _store: Store<UserState>, private router: Router, private _userService: UserService) {
+  get f() { return this.loginForm.controls; }
+  constructor(private _store: Store<UserState>,
+              private router: Router,
+              private _userService: UserService ) {
   }
 
   onSubmit() {
@@ -79,5 +84,13 @@ export class LoginComponent {
       this.isCheckLogin = false;
     }
   }
-
+  // login(username: string, password: string) {
+  //   return this.dataLogin()
+  //     .pipe(map(user => {
+  //       // store user details and jwt token in local storage to keep user logged in between page refreshes
+  //       localStorage.setItem('currentUser', JSON.stringify(user));
+  //       this.currentUserSubject.next(user);
+  //       return user;
+  //     }));
+  // }
 }

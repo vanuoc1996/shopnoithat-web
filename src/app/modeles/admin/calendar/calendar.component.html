@@ -1,13 +1,5 @@
 <h1 class="text-warning main-chair">calendar works!</h1>
 
-<button class="btn btn-primary">
-  <a>
-    Ấn vào đây!
-  </a>
-</button>
-<i class="pi pi-apple" style="font-size: 2rem"></i>
-
-<p-dropdown optionLabel="name"></p-dropdown>
-
-<h5>Inline</h5>
-<p-calendar [(ngModel)]="date14" [inline]="true" [showWeek]="true"></p-calendar>
+<div class="container bg-light">
+  <full-calendar [options]="calendarOptions"></full-calendar>
+</div>
