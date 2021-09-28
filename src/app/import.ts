@@ -9,7 +9,7 @@ import {Page404Component} from "./extrapages/page404/page404.component";
 import {CalendarComponent} from "./modeles/admin/calendar/calendar.component";
 import {CalendarModule} from "primeng/calendar";
 import {DropdownModule} from "primeng/dropdown";
-import {HomeWebComponent} from "./layouts/wepsite/home-web/home-web.component";
+import {HomeWebComponent} from "./layouts/website/home-web/home-web.component";
 import {StoreModule} from "@ngrx/store";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";

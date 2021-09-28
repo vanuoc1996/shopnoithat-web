@@ -12,6 +12,9 @@ import {IncomeComponent} from "../../../modeles/admin/income/income.component";
 import {InventoryComponent} from "../../../modeles/admin/inventory/inventory.component";
 import {OrderComponent} from "../../../modeles/admin/order/order.component";
 import {ProductComponent} from "../../../modeles/admin/product/product.component";
+import {DialogModule} from "primeng/dialog";
+import {ButtonModule} from "primeng/button";
+import {OverlayPanelModule} from "primeng/overlaypanel";
 
 const routes: Routes = [{
   path: '',
@@ -58,7 +61,10 @@ const routes: Routes = [{
     ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    DialogModule,
+    ButtonModule,
+    OverlayPanelModule
   ],
     exports: [RouterModule, SettingComponent]
 })

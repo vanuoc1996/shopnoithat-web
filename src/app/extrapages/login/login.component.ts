@@ -29,7 +29,7 @@ export class LoginComponent {
       "id": 1,
       "name": "NGUYEN THANH HOA",
       "email": "abc@gmail.com",
-      "password": "1234",
+      "password": "a1234",
       "remember_token": 'TYDAKSDJASLKDJASLKDJASDASD'
     },
     {
@@ -37,6 +37,13 @@ export class LoginComponent {
       "name": "SKIPPERHOA",
       "email": "skipperhoa2013@gmail.com",
       "password": "hoa123",
+      "remember_token": 'TYDAKSDJASLKDJASLKDJASDASD'
+    },
+    {
+      "id": 3,
+      "name": "SKIPPERHOA",
+      "email": "vanuoc9xhy@gmail.com",
+      "password": "mothaiba123",
       "remember_token": 'TYDAKSDJASLKDJASLKDJASDASD'
     }
   ]
